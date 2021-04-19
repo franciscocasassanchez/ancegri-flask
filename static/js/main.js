@@ -1,6 +1,5 @@
 let homePageList = document.getElementsByClassName('pageblock__page--home');
 let modeloPageList = document.getElementsByClassName('pageblock__page--modelo');
-let buttons = document.getElementsByClassName('pageblock__button--slide');
 let homeIndex = 0;
 let homePages = new Map();
 for(var i = 0; i < homePageList.length; i++){

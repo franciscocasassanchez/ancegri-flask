@@ -1,0 +1,70 @@
+#nosotros.pageblock__page--home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nosotros.pageblock__page--home h2,
+#nosotros.pageblock__page--home h3,
+.pageblock__button{
+    position: relative;
+}
+#nosotros.pageblock__page--home h2{
+    font-size: 8rem;
+    text-transform: capitalize;
+    text-align: left;
+    right: 20rem;
+}
+#nosotros.pageblock__page--home h3{
+    font-size: 4rem;
+    text-align: right;
+    left: 5rem;
+    margin-top: 5rem;
+}
+.pageblock__button{
+    transition: all 0.5s;
+    background-color: black;
+    color: silver;
+    padding: 3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    top: 5rem;
+}
+.pageblock__button:hover{
+    background-color: lightslategray;
+    color: lightblue;
+}
+.grid__mv{
+    width: 60%;
+    justify-items: center;
+}
+.grid__mv h2{
+    text-align: center;
+}
+.grid__cell--content{
+    text-align: justify;
+    padding: 1rem;
+}
+#historia.pageblock__page--home div{
+    width: 50%;
+    text-align: justify;
+}
+#historia.pageblock__page--home div h2{
+    font-size: 5rem;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+}
+#asociados > div{
+    width: 80%;
+    height: 50rem;
+}
+#asociados > h2{
+    position: relative;
+    left: 50%;
+}
+.asociado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+}

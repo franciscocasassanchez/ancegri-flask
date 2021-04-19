@@ -61,12 +61,13 @@ header{
 .pageblock__button--slide{
     transition: all 1s;
     background-color: black;
+    opacity: 0.5;
     color: silver;
     padding: 3rem;
 }
 .pageblock__button--slide:hover{
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 1;
 }
 #back{
     position: absolute;
@@ -76,7 +77,7 @@ header{
 #next{
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 100%;     
     transform: translate(-100%, -50%);
 }
 #lineas-de-negocio{
