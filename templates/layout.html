@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANCEGRI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/general.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <h1 class="header__title">ANCEGRI</h1>
+            <nav class="header__navigation">
+                <a href="#">Nosotros</a>
+                <a href="#lineas-de-negocio">Lineas de negocio</a>
+                <a href="#modelo">Modelo</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    {% block body%}
+    {% endblock %}
+    <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+</body>
+</html>

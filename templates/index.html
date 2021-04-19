@@ -1,0 +1,39 @@
+{% extends "layout.html "%}
+{% block body %}
+<section id="home" class="pageblock__viewport">
+    <div id="nosotros" class="pageblock__page pageblock__page--home">
+        <h2>Nosotros</h2>        
+    </div>
+    <div id="misionvision" class="pageblock__page pageblock__page--home">
+        <h2>Misión Visión</h2>
+    </div>
+    <div id="historia" class="pageblock__page pageblock__page--home">
+        <h2>Historia</h2>
+    </div>
+    <div id="asociados" class="pageblock__page pageblock__page--home">
+        <h2>Asociados</h2>
+    </div>
+    <span id="back" class="pageblock__button--slide" onclick="prevHomeSlide()">&#10094;</span>
+    <span id="next" class="pageblock__button--slide" onclick="nextHomeSlide()">&#10095;</span>
+</section>
+<section id="lineas-de-negocio" class="pageblock__viewport">
+    <div class="pageblock__page">
+        <h2>Lineas de negocio</h2>
+    </div>
+</section>
+<section id="modelo" class="pageblock__viewport position--relative">
+    <div class="pageblock__page pageblock__page--modelo">
+        <h2>Modelo 1</h2>
+    </div>
+    <div class="pageblock__page pageblock__page--modelo">
+        <h2>Modelo 2</h2>
+    </div>
+    <span id="back" class="pageblock__button--slide" onclick="prevModeloSlide()">&#10094;</span>
+    <span id="next" class="pageblock__button--slide" onclick="nextModeloSlide()">&#10095;</span>
+</section>
+<section id="contacto" class="pageblock__viewport">
+    <div class="pageblock__page">
+        <h2>Contacto</h2>
+    </div>
+</section>
+{% endblock %}
