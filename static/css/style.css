@@ -23,16 +23,16 @@
 }
 .pageblock__button{
     transition: all 0.5s;
-    background-color: black;
-    color: silver;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     padding: 3rem;
     text-decoration: none;
     text-transform: capitalize;
     top: 5rem;
 }
 .pageblock__button:hover{
-    background-color: lightslategray;
-    color: lightblue;
+    background-color: var(--secondary-color);
+    color: var(--clear-color);
 }
 .grid__mv{
     width: 60%;

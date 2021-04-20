@@ -13,17 +13,18 @@
 <body>
     <header>
         <div class="header__container">
-            <h1 class="header__title">ANCEGRI</h1>
-            <nav class="header__navigation">
-                <a href="#">Nosotros</a>
-                <a href="#lineas-de-negocio">Lineas de negocio</a>
-                <a href="#modelo">Modelo</a>
-                <a href="#contacto">Contacto</a>
+            <h1 id="title__principal" class="header__title">ANCEGRI</h1>
+            <nav id="navigation__principal" class="header__navigation">
+                <a class="navigation__link" href="#">Nosotros</a>
+                <a class="navigation__link" href="#lineas-de-negocio">Lineas de negocio</a>
+                <a class="navigation__link" href="#modelo">Modelo</a>
+                <a class="navigation__link" href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
     {% block body%}
     {% endblock %}
+    <script src="{{ url_for('static', filename = 'js/slide.js') }}"></script>
     <script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
 </body>
 </html>

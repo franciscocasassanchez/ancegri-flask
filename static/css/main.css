@@ -4,37 +4,54 @@ header{
 }
 .header__container{
     width: 100vw;
+    height: 30%;
     position: fixed;
     z-index: 100;
+    /* transition: all 0.5s; */
 }
 .header__title{
-    position: relative;
+    position: absolute;
+    top: 50%;
     left: 50%;
+    top: 15%;
     transform: translateX(-50%);
     width: max-content;
-    color: silver;
+    color: var(--secondary-color);
+    font-size: 13rem;
+    transition: all 0.5s;
+}
+.header__title--scroll{
+    left: 20%;
+    font-size: 6rem;
 }
 .header__navigation{
-    position: relative;
+    position: absolute;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    background-color: red;
+    background-color: var(--primary-color);
     padding: 2rem 3rem;
     border-radius: 5rem;
+    transition: all 0.5s;
+}
+.header__navigation--scroll{
+    top: 50%;
+    transform: translate(-30%, -50%);
+    background-color: transparent;
 }
 .header__navigation a{
     transition: all 0.5s;
-    color: silver;
+    color: var(--clear-color);
     text-decoration: none;
     height: 100%;
 }
 .header__navigation a:hover{
     transform:scale(1.1);
-    color: lightsteelblue;
+    color: var(--secondary-color);
 }
 .pageblock__viewport{
     width: 100vw;
@@ -54,15 +71,11 @@ header{
     left: 0vw;
     transition: all 1s;
 }
-#nosotros{background-color: rgb(0, 169, 199);}
-#misionvision{ background-color: rgb(0, 169, 199);}
-#historia{ background-color: rgb(0, 169, 199);}
-#asociados{background-color: rgb(0, 169, 199);}
 .pageblock__button--slide{
     transition: all 1s;
-    background-color: black;
+    background-color: var(--tertiary-color);
     opacity: 0.5;
-    color: silver;
+    color: var(--clear-color);
     padding: 3rem;
 }
 .pageblock__button--slide:hover{
@@ -79,13 +92,4 @@ header{
     top: 50%;
     left: 100%;     
     transform: translate(-100%, -50%);
-}
-#lineas-de-negocio{
-    background-color: rgb(0, 85, 100);
-}
-.pageblock__page--modelo{
-    background-color: rgb(180, 68, 16);    
-}
-#contacto{
-    background-color: rgb(94, 37, 148);
 }
