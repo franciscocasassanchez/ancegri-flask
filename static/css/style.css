@@ -13,11 +13,13 @@
     font-size: 8rem;
     text-transform: capitalize;
     text-align: left;
+    top: 5rem;
     right: 20rem;
 }
 #nosotros.pageblock__page--home h3{
     font-size: 4rem;
     text-align: right;
+    top: 5rem;
     left: 5rem;
     margin-top: 5rem;
 }
@@ -28,13 +30,15 @@
     padding: 3rem;
     text-decoration: none;
     text-transform: capitalize;
-    top: 5rem;
+    top: 10rem;
 }
 .pageblock__button:hover{
     background-color: var(--secondary-color);
     color: var(--clear-color);
 }
 .grid__mv{
+    position: relative;
+    top: 5rem;
     width: 60%;
     justify-items: center;
 }
@@ -46,6 +50,8 @@
     padding: 1rem;
 }
 #historia.pageblock__page--home div{
+    position: relative;
+    top: 5rem;
     width: 50%;
     text-align: justify;
 }
@@ -54,17 +60,43 @@
     text-indent: 1rem;
     margin-bottom: 2rem;
 }
+#asociados{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 #asociados > div{
+    position: relative;
+    top: 10rem;
     width: 80%;
     height: 50rem;
 }
 #asociados > h2{
-    position: relative;
+    position: absolute;
     left: 50%;
+    transform: translateX(-50%);
 }
 .asociado{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items : center;
+}
+.lob{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+.lob:hover{
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.lob__description{
+    display: none;
 }
