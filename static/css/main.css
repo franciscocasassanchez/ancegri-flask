@@ -38,6 +38,7 @@ header{
     border-radius: 5rem;
     transition: all 0.5s;
 }
+
 .header__navigation--scroll{
     top: 50%;
     transform: translate(-30%, -50%);
@@ -48,6 +49,14 @@ header{
     color: var(--clear-color);
     text-decoration: none;
     height: 100%;
+}
+@media (max-width: 1366px) {
+    .header__navigation{
+        top: 90%;
+    }
+    .header__navigation--scroll{
+        top: 50%;
+    }
 }
 .header__navigation a:hover{
     transform:scale(1.1);
